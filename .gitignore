@@ -1,0 +1,16 @@
+# Виртуальное окружение
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Промежуточные результаты прогона Allure (генерируются заново).
+# В репозиторий коммитим только готовый отчёт allure-report/.
+allure-results/
+
+# IDE
+.idea/
+.vscode/
