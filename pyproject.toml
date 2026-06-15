@@ -1,9 +1,16 @@
 [project]
 name = "sprint-7"
 version = "0.1.0"
-description = "Add your description here"
+description = "API tests for Yandex Scooter (Самокат) service"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "allure-pytest>=2.16.0",
     "pytest>=9.1.0",
+    "requests>=2.34.2",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--alluredir=allure-results"
